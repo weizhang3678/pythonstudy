@@ -29,3 +29,6 @@ print(float(3))
 print(0.1 + 0.2)
 print(type(3.0))
 print(type('3.0'))
+
+print( 5 > 3 )
+print( 7 < 3 )
