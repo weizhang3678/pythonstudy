@@ -7,7 +7,7 @@ Created on Feb 6, 2020
 from turtle import *
 
 # width of brush:
-width(4)
+width(8)
 
 # forward
 forward(200)

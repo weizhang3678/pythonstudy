@@ -1,21 +1,25 @@
 '''
-Created on Feb 6, 2020
+Created on Feb 10, 2020
 
 @author: zhangwei
 '''
-from turtle import *
-
-def drawStar(x, y):
-    pu()
-    goto(x, y)
-    pd()
-    # set heading: 0
-    seth(0)
-    for i in range(5):
-        fd(40)
-        rt(144)
-
-for x in range(0, 250, 50):
-    drawStar(x, 0)
-
-done()
+import turtle
+import time
+  
+turtle.pensize(5)
+turtle.pencolor("yellow")
+turtle.fillcolor("red")
+  
+turtle.begin_fill()
+for _ in range(5):
+  turtle.forward(200)
+  turtle.right(144)
+turtle.end_fill()
+time.sleep(2)
+  
+turtle.penup()
+turtle.goto(-150,-120)
+turtle.color("violet")
+turtle.write("Done", font=('Arial', 40, 'normal'))
+  
+turtle.mainloop()
