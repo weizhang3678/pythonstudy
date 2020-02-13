@@ -6,13 +6,13 @@ Created on Feb 12, 2020
 
 import random, pygame
 
-skier_images = ["./images/skier_down.png", "./images/skier_right1.png", "./images/skier_right2.png", "./images/skier_left1.png", "./images/skier_left2.png"]
+skier_images = ["../images/skier_down.png", "../images/skier_right1.png", "../images/skier_right2.png", "../images/skier_left1.png", "../images/skier_left2.png"]
 
 class skierClass(pygame.sprite.Sprite):
 
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load("skier_down.png")
+        self.image = pygame.image.load("../images/skier_down.png")
         self.rect = self.image.get_rect()
         self.rect.center = [320,100]
         self.angle = 0
@@ -64,9 +64,9 @@ def create_map():
             locations.append(location)
             type = random.choice(["tree","flag"])
             if type == "tree":
-                img = "skier_tree.png"
+                img = "../images/skier_tree.png"
             elif type == "flag":
-                img = "skier_flag.png"
+                img = "../images/skier_flag.png"
             obstracle = obstracleClass(img,location,type)
             obstracles.add(obstracle)
 
@@ -112,10 +112,10 @@ while running:
     if hit:
         if hit[0].type == "tree" and not hit[0].passed:
             points = points - 100
-            skier.image = pygame.image.load("skier_crash.png")
+            skier.image = pygame.image.load("../images/skier_crash.png")
             animate()
             pygame.time.delay(1000)
-            skier.image = pygame.image.load("skier_down.png")
+            skier.image = pygame.image.load("../images/skier_down.png")
             skier.angle = 0
             speed = [0,6]
             hit[0].passed = True
