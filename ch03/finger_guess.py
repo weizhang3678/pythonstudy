@@ -4,7 +4,7 @@ Created on Feb 13, 2020
 @author: zhangwei
 '''
 
-import random  #导入随机模块
+import random  #
 
 num = 1
 yin_num = 0
