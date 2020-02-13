@@ -4,6 +4,7 @@ Created on Feb 7, 2020
 @author: zhangwei
 '''
 
+# string and number are immutable
 print("""line1
 line2
 line3""")
