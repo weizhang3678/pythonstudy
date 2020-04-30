@@ -10,6 +10,7 @@ scores =[79,90,77,89,97,100,99,100]
 mix = [3,6,5,"Good",grades]
 
 friends = []
+friends = list()
 friends.append("Mary")
 print(friends)
 friends.append("Rose")
