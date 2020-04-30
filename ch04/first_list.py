@@ -17,5 +17,19 @@ friends.append("Rose")
 print(friends)
 print(friends[1])
 
+friends[0] = 'wei'
+print(grades[::-1])
+print(type(friends))
 
-print(mix)
+print(scores + grades)
+print(scores)
+scores.extend(grades)
+print(scores)
+print(len(friends))
+scores.clear()
+print(scores)
+
+new_scores = grades.copy()
+print(id(new_scores))
+print(id(grades))
+print(new_scores)

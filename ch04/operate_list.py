@@ -19,6 +19,7 @@ print(mix)
 #delete element
 mix.remove("Good")
 del mix[0]
+#mix.remove('sss')
 print(mix)
 
 #pop
@@ -29,3 +30,14 @@ print(mix)
 e = mix.pop(1)
 print(e)
 print(mix)
+
+#reverse
+print('reverse')
+mix.reverse()
+print(mix)
+
+#sort
+print('sort')
+scores = [12,23,12,34,25,67]
+scores.sort()
+print(scores)
