@@ -9,3 +9,10 @@ print(type(a_tuple))
 
 print(my_tuple.count('1'))
 print(my_tuple.index(1))
+
+a=()
+print(type(a))
+a=(1)
+print(type(a))
+a=(1,)
+print(type(a))
