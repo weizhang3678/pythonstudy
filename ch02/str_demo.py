@@ -18,7 +18,8 @@ print(string1.endswith('t.'))
 print(string1.startswith('i'))
 
 print(string1.find('a'))
-print(string1.index('a'))
+print(string1.find('a',4))
+print(string1.index('a',4))
 
 print(string1.upper())
 print(string1.lower())
