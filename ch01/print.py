@@ -8,8 +8,11 @@ Created on Feb 7, 2020
 print("""line1
 line2
 line3""")
+n1 =10
+n2 = 20
 
-
+print("first number is {}, and second number is {}".format(n1,n2))
+print("first number is %d, and second number is %d"%( n1,n2))
 print('line1\nline2\nline3')
 print('line11', end = ' ')
 print('line22', end = " ")
